@@ -28,7 +28,7 @@ class Client:
         response = self.raw_request('GET', 'health')
         return response.ok
     
-    def inference_encoder(self, name: str, inference_encoder_data: InferenceEncoderSchema):
+    def inference_encoder(self, name: str, inference_encoder_data: InferenceEncoderSchema) -> InferenceEncoderResponse:
         """
         See: https://docs.metarank.ai/reference/api#inference-with-llms
 
@@ -40,7 +40,7 @@ class Client:
         response = self.request("POST", f"inference/encoder/{name}", inference_encoder_data.dict(exclude_none=True))
         return InferenceEncoderResponse(**response)
     
-    def inference_cross(self, name: str, inference_cross_data: InferenceCrossSchema):
+    def inference_cross(self, name: str, inference_cross_data: InferenceCrossSchema) -> InferenceCrossResponse:
         """
         See: https://docs.metarank.ai/reference/api#inference-with-llms
 
@@ -62,7 +62,7 @@ class Client:
         response = self.raw_request("GET", "metrics")
         return response.text
     
-    def rank(self, model_name: str, rank_data: RankSchema, explain: bool = False):
+    def rank(self, model_name: str, rank_data: RankSchema, explain: bool = False) -> RankResponse:
         """
         See: https://docs.metarank.ai/reference/api#ranking
 
@@ -92,7 +92,7 @@ class Client:
         response = self.request("POST", endpoint, data=data)
         return RecommendResponse(**response)
     
-    def train(self, model_name: str):
+    def train(self, model_name: str) -> TrainResponse:
         """
         See: https://docs.metarank.ai/reference/api#train
 
