@@ -73,7 +73,7 @@ class Client:
 
         endpoint = f"rank/{model_name}"
         if explain:
-            endpoint = f"{endpoint}?explain=1"
+            endpoint = f"{endpoint}?explain=true"
 
         response = self.request("POST", endpoint, data=rank_data.dict(exclude_none=True))
         return RankResponse(**response)
