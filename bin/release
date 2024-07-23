@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+rm -rf ./dist
+mkdir ./dist
+
+poetry build
+
+twine upload ./dist/metarank-*

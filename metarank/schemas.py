@@ -34,8 +34,10 @@ class FeedbackSchema(BaseSchema):
     items: Optional[list[ItemSchema]] = None
     fields: Optional[list[FieldSchema]] = None
     user: Optional[str] = None
+    ranking: Optional[str] = None
     session: Optional[str] = None
-    timestamp: Union[int, str] 
+    timestamp: Union[int, str]
+    type: Optional[str] = None
 
 
 class FeedbackResponse(BaseSchema):

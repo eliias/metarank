@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "metarank"
-version = "0.1.6"
+version = "0.1.7"
 description = "A Python client for metarank"
 authors = ["Hannes Moser <box@hannesmoser.at>"]
 license = "MIT"
@@ -26,6 +26,7 @@ structlog = "^24.4.0"
 pytest = "^8.3.1"
 responses = "^0.25.3"
 ruff = "^0.5.4"
+twine = "^5.1.1"
 
 [tool.ruff]
 line-length = 80
