@@ -18,7 +18,7 @@ class BaseSchema(BaseModel):
 
 class FieldSchema(BaseSchema):
     name: str
-    value: str
+    value: Union[bool, str, int, float, list[str], list[int], list[float]]
 
 
 class ItemSchema(BaseSchema):
@@ -59,12 +59,12 @@ class IterationSchema(BaseSchema):
 
 class RankSchema(BaseSchema):
     id: str
-    user: str
-    session: str
+    user: Optional[str] = None
+    session: Optional[str] = None
     timestamp: Union[int, str]
-    fields: list[FieldSchema]
+    fields: Optional[list[FieldSchema]] = None
     items: list[ItemSchema]
-    
+
     
 class ItemResponse(BaseSchema):
     item: str

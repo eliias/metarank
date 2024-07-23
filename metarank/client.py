@@ -3,7 +3,7 @@ from requests import request
 from .schemas import (FeedbackSchema, FeedbackResponse, TrainResponse,
                       RankResponse, RecommendResponse, RecommendSchema,
                       InferenceEncoderSchema, InferenceEncoderResponse,
-                      InferenceCrossSchema, InferenceCrossResponse)
+                      InferenceCrossSchema, InferenceCrossResponse, RankSchema)
 
 
 class Client:
@@ -62,7 +62,7 @@ class Client:
         response = self.raw_request("GET", "metrics")
         return response.text
     
-    def rank(self, model_name: str, explain: bool = False):
+    def rank(self, model_name: str, rank_data: RankSchema, explain: bool = False):
         """
         See: https://docs.metarank.ai/reference/api#ranking
 
@@ -74,8 +74,8 @@ class Client:
         endpoint = f"rank/{model_name}"
         if explain:
             endpoint = f"{endpoint}?explain=1"
-            
-        response = self.request("POST", endpoint)
+
+        response = self.request("POST", endpoint, data=rank_data)
         return RankResponse(**response)
     
     def recommend(self, model_name: str, data: RecommendSchema) -> RecommendResponse:
