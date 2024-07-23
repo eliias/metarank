@@ -1,0 +1,23 @@
+services:
+  redis:
+    image: redis:6.2.6
+    ports:
+      - "6379:6379"
+    networks:
+      - metarank_local
+
+  metarank:
+    image: metarank/metarank:0.7.10
+    depends_on:
+      - redis
+    command: "standalone --config /data/config.yml --data /data/events.jsonl.gz"
+    volumes:
+      - ./docker/metarank:/data
+    ports:
+      - 8080:8080
+      - 6123:6123
+    networks:
+      - metarank_local
+
+networks:
+  metarank_local:
