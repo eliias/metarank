@@ -75,7 +75,7 @@ class Client:
         if explain:
             endpoint = f"{endpoint}?explain=1"
 
-        response = self.request("POST", endpoint, data=rank_data)
+        response = self.request("POST", endpoint, data=rank_data.dict(exclude_none=True))
         return RankResponse(**response)
     
     def recommend(self, model_name: str, data: RecommendSchema) -> RecommendResponse:
