@@ -69,7 +69,7 @@ class RankSchema(BaseSchema):
 class ItemResponse(BaseSchema):
     item: str
     score: float
-    features: Optional[list[FieldSchema]] = None
+    features: Optional[Union[list[FieldSchema], dict]] = None
     
 
 class RankResponse(BaseSchema):
