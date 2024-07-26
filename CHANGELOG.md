@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## v0.3.0 (2024-07-26)
+
+### Chore
+
+* chore: add pypi publishing ([`868fdf3`](https://github.com/eliias/metarank/commit/868fdf30274e48a49079a14e385e7c88a37ccf96))
+
 ## v0.0.1 (2024-07-26)
 
 ## Chore
