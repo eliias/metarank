@@ -1,0 +1,27 @@
+# CHANGELOG
+
+## v0.0.1 (2024-07-26)
+
+### Chore
+
+* chore: add GitHub release ([`74c126b`](https://github.com/eliias/metarank/commit/74c126b93cdb0f364456c35fd7cbacf88489e9f0))
+
+* chore: add semantic-release configuration ([`b09b5be`](https://github.com/eliias/metarank/commit/b09b5be24c400db7f0ca4a1f806b9a9913a7ac29))
+
+### Fix
+
+* fix: add missing feedback schema fields ([`49b6aed`](https://github.com/eliias/metarank/commit/49b6aedba79c8d5b7831a5e0ecc81574aab6832c))
+
+* fix: allow any dict when explaining features ([`88fd627`](https://github.com/eliias/metarank/commit/88fd627a0a7e88b63594a79a564d45ae3c6b07fe))
+
+* fix: explain query parameter must be bool ([`298cb67`](https://github.com/eliias/metarank/commit/298cb672567112a73d70bd91cd241e2d06164456))
+
+* fix: add missing response types ([`cd23df2`](https://github.com/eliias/metarank/commit/cd23df28d27aa418ecd48f82715a1533b068df13))
+
+* fix: add missing dict conversion in rank endpoint ([`c659ce1`](https://github.com/eliias/metarank/commit/c659ce1593ab107e8b03d65a082c8ccf13b56427))
+
+* fix: add rank payload, fix field schema value type ([`9835067`](https://github.com/eliias/metarank/commit/98350677faa19198c96aa643a27199bb1d44b64a))
+
+### Unknown
+
+* Initial commit ([`55c07dd`](https://github.com/eliias/metarank/commit/55c07dd20b6dd6976872097d8073e93bb91526e7))
