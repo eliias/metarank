@@ -34,3 +34,7 @@ events = [
     )
 ]
 ```
+
+## License
+
+[MIT](./LICENSE)
