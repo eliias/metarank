@@ -52,6 +52,9 @@ allow_zero_version = true
 repo_dir = "/Users/hannesmoser/src/github.com/eliias/metarank"
 no_git_verify = false
 tag_format = "v{version}"
+version_toml = [
+    "pyproject.toml:tool.poetry.version",
+]
 
 [tool.semantic_release.branches.main]
 match = "(main|master)"
