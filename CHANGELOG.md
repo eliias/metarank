@@ -1,5 +1,17 @@
 # CHANGELOG
 
+## v0.0.2 (2024-07-26)
+
+### Chore
+
+* chore: add semantic-release config ([`ef15ae9`](https://github.com/eliias/metarank/commit/ef15ae97ffd9e96900aa123144d92b7eca1f59e3))
+
+### Fix
+
+* fix: repo path for semantic-release ([`ced84f2`](https://github.com/eliias/metarank/commit/ced84f2e6bea2261a835664331727676168d19db))
+
+* fix: use version from pyproject file ([`4dbc1da`](https://github.com/eliias/metarank/commit/4dbc1daf3041c4abc520ad4fffef84b8ee449e02))
+
 ## v0.0.1 (2024-07-26)
 
 ### Chore

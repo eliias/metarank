@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "metarank"
-version = "0.1.7"
+version = "0.0.2"
 description = "A Python client for metarank"
 authors = ["Hannes Moser <box@hannesmoser.at>"]
 license = "MIT"
@@ -49,7 +49,6 @@ commit_parser = "angular"
 logging_use_named_masks = false
 major_on_zero = true
 allow_zero_version = true
-repo_dir = "/Users/hannesmoser/src/github.com/eliias/metarank"
 no_git_verify = false
 tag_format = "v{version}"
 version_toml = [
