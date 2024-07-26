@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "metarank"
-version = "0.2.0"
+version = "0.0.1"
 description = "A Python client for metarank"
 authors = ["Hannes Moser <box@hannesmoser.at>"]
 license = "MIT"
