@@ -35,6 +35,11 @@ events = [
 ]
 ```
 
+## Release
+
+We use [python-semantic-release](https://python-semantic-release.readthedocs.io/en/latest/)
+to automatically release the package to pypi.
+
 ## License
 
 [MIT](./LICENSE)
