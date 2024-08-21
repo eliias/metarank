@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## v1.0.2 (2024-08-21)
+
+### Fix
+
+* fix: set missing build command ([`9b081b4`](https://github.com/eliias/metarank/commit/9b081b40847ba7f37e3633d2360d41b747a94c06))
+
 ## v1.0.1 (2024-08-21)
 
 ### Fix
