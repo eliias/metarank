@@ -17,7 +17,7 @@ class Client:
         :param feedback_data: 
         :return: 
         """
-        response = self.request("POST", "feedback", feedback_data.dict(exclude_none=True))
+        response = self.request("POST", "feedback", feedback_data.model_dump(exclude_none=True, exclude_unset=True))
         return FeedbackResponse(**response)
     
     def health_check(self) -> bool:
@@ -37,7 +37,7 @@ class Client:
         :return: 
         """
 
-        response = self.request("POST", f"inference/encoder/{name}", inference_encoder_data.dict(exclude_none=True))
+        response = self.request("POST", f"inference/encoder/{name}", inference_encoder_data.model_dump(exclude_none=True, exclude_unset=True))
         return InferenceEncoderResponse(**response)
     
     def inference_cross(self, name: str, inference_cross_data: InferenceCrossSchema) -> InferenceCrossResponse:
@@ -49,7 +49,7 @@ class Client:
         :return: 
         """
 
-        response = self.request("POST", f"inference/cross/{name}", inference_cross_data.dict(exclude_none=True))
+        response = self.request("POST", f"inference/cross/{name}", inference_cross_data.model_dump(exclude_none=True, exclude_unset=True))
         return InferenceCrossResponse(**response)
     
     def metrics(self) -> str:
@@ -75,7 +75,7 @@ class Client:
         if explain:
             endpoint = f"{endpoint}?explain=true"
 
-        response = self.request("POST", endpoint, data=rank_data.dict(exclude_none=True))
+        response = self.request("POST", endpoint, data=rank_data.model_dump(exclude_none=True, exclude_unset=True))
         return RankResponse(**response)
     
     def recommend(self, model_name: str, data: RecommendSchema) -> RecommendResponse:
