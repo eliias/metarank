@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## v1.0.1 (2024-08-21)
+
+### Fix
+
+* fix: release are not published ([`8053a9f`](https://github.com/eliias/metarank/commit/8053a9fea7b24343fce20134c73ffdc81d8fadb2))
+
 ## v1.0.0 (2024-08-21)
 
 ### Chore
