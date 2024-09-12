@@ -1,5 +1,109 @@
 # CHANGELOG
 
+## v1.1.0 (2024-09-12)
+
+### Chore
+
+* chore(deps-dev): bump ruff from 0.6.3 to 0.6.4
+
+Bumps [ruff](https://github.com/astral-sh/ruff) from 0.6.3 to 0.6.4.
+- [Release notes](https://github.com/astral-sh/ruff/releases)
+- [Changelog](https://github.com/astral-sh/ruff/blob/main/CHANGELOG.md)
+- [Commits](https://github.com/astral-sh/ruff/compare/0.6.3...0.6.4)
+
+---
+updated-dependencies:
+- dependency-name: ruff
+  dependency-type: direct:development
+  update-type: version-update:semver-patch
+...
+
+Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`7aa1640`](https://github.com/eliias/metarank/commit/7aa16402907c2886221a6f2aa5b24b6e01cb4354))
+
+* chore(deps): bump pydantic from 2.8.2 to 2.9.0
+
+Bumps [pydantic](https://github.com/pydantic/pydantic) from 2.8.2 to 2.9.0.
+- [Release notes](https://github.com/pydantic/pydantic/releases)
+- [Changelog](https://github.com/pydantic/pydantic/blob/main/HISTORY.md)
+- [Commits](https://github.com/pydantic/pydantic/compare/v2.8.2...v2.9.0)
+
+---
+updated-dependencies:
+- dependency-name: pydantic
+  dependency-type: direct:production
+  update-type: version-update:semver-minor
+...
+
+Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`5bf1d0a`](https://github.com/eliias/metarank/commit/5bf1d0adf26f546f2ca0cf49406e16257fd55f30))
+
+* chore(deps-dev): bump ruff from 0.6.2 to 0.6.3
+
+Bumps [ruff](https://github.com/astral-sh/ruff) from 0.6.2 to 0.6.3.
+- [Release notes](https://github.com/astral-sh/ruff/releases)
+- [Changelog](https://github.com/astral-sh/ruff/blob/main/CHANGELOG.md)
+- [Commits](https://github.com/astral-sh/ruff/compare/0.6.2...0.6.3)
+
+---
+updated-dependencies:
+- dependency-name: ruff
+  dependency-type: direct:development
+  update-type: version-update:semver-patch
+...
+
+Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`4cc072e`](https://github.com/eliias/metarank/commit/4cc072e82dd7767302e19f3ae5601b55106a7ae9))
+
+* chore(deps-dev): bump python-semantic-release from 9.8.7 to 9.8.8
+
+Bumps [python-semantic-release](https://github.com/python-semantic-release/python-semantic-release) from 9.8.7 to 9.8.8.
+- [Release notes](https://github.com/python-semantic-release/python-semantic-release/releases)
+- [Changelog](https://github.com/python-semantic-release/python-semantic-release/blob/master/CHANGELOG.md)
+- [Commits](https://github.com/python-semantic-release/python-semantic-release/compare/v9.8.7...v9.8.8)
+
+---
+updated-dependencies:
+- dependency-name: python-semantic-release
+  dependency-type: direct:development
+  update-type: version-update:semver-patch
+...
+
+Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`f5bd844`](https://github.com/eliias/metarank/commit/f5bd844200b60488067519ff4c24170282dc9704))
+
+* chore(deps-dev): bump python-semantic-release from 9.8.6 to 9.8.7
+
+Bumps [python-semantic-release](https://github.com/python-semantic-release/python-semantic-release) from 9.8.6 to 9.8.7.
+- [Release notes](https://github.com/python-semantic-release/python-semantic-release/releases)
+- [Changelog](https://github.com/python-semantic-release/python-semantic-release/blob/master/CHANGELOG.md)
+- [Commits](https://github.com/python-semantic-release/python-semantic-release/compare/v9.8.6...v9.8.7)
+
+---
+updated-dependencies:
+- dependency-name: python-semantic-release
+  dependency-type: direct:development
+  update-type: version-update:semver-patch
+...
+
+Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`8b875f6`](https://github.com/eliias/metarank/commit/8b875f660d955efcfb9f3ccf6ccde9282f0136d8))
+
+* chore(deps-dev): bump ruff from 0.6.1 to 0.6.2
+
+Bumps [ruff](https://github.com/astral-sh/ruff) from 0.6.1 to 0.6.2.
+- [Release notes](https://github.com/astral-sh/ruff/releases)
+- [Changelog](https://github.com/astral-sh/ruff/blob/main/CHANGELOG.md)
+- [Commits](https://github.com/astral-sh/ruff/compare/0.6.1...0.6.2)
+
+---
+updated-dependencies:
+- dependency-name: ruff
+  dependency-type: direct:development
+  update-type: version-update:semver-patch
+...
+
+Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`28ae88f`](https://github.com/eliias/metarank/commit/28ae88fbb46bec51f1fefaa4b5ac0103ccfc64c7))
+
+### Feature
+
+* feat: support list of event payload data for feedback endpoint ([`5bcc432`](https://github.com/eliias/metarank/commit/5bcc4324f041d3f3f8b6e3d2a2e6fddf759ac133))
+
 ## v1.0.2 (2024-08-21)
 
 ### Fix
