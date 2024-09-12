@@ -10,14 +10,20 @@ class Client:
     def __init__(self, base_url: str):
         self.base_url = base_url
 
-    def feedback(self, feedback_data: FeedbackSchema) -> FeedbackResponse:
+    def feedback(self, feedback_data: FeedbackSchema | list[FeedbackSchema]) -> FeedbackResponse:
         """
         See: https://docs.metarank.ai/reference/api#feedback
         
         :param feedback_data: 
         :return: 
         """
-        response = self.request("POST", "feedback", feedback_data.model_dump(exclude_none=True, exclude_unset=True))
+        
+        if isinstance(feedback_data, list):
+            payload = [feedback_data_item.model_dump(exclude_none=True, exclude_unset=True) for feedback_data_item in feedback_data]
+        else:
+            payload = feedback_data.model_dump(exclude_none=True, exclude_unset=True)
+        
+        response = self.request("POST", "feedback", payload)
         return FeedbackResponse(**response)
     
     def health_check(self) -> bool:
